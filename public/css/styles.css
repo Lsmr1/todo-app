@@ -117,21 +117,7 @@ main {
     color: var(--info-text-color);
 }
 
-.infomacoes a, 
-.botoes {
+.infomacoes a {
     text-decoration: none;
     color: var(--info-text-color);
-}
-
-.botoes {
-    padding-block: 1rem;
-    background: var(--bg-tarefas);
-    border-radius: 5px;
-    margin-top: 1rem;
-
-    display: flex;
-    justify-content: center;
-    gap: 1.2rem;
-
-    font-size: .875rem;
 }
