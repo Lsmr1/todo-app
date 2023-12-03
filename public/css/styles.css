@@ -109,9 +109,29 @@ main {
 }
 
 .informacoes {
-    border-top: 1p solid var(--border-color);
+    border-top: 1px solid var(--border-color);
     padding: 1rem 1.25rem;
     display: flex;
     justify-content: space-between;
+    font-size: 0.75rem;
+    color: var(--info-text-color);
 }
 
+.infomacoes a, 
+.botoes {
+    text-decoration: none;
+    color: var(--info-text-color);
+}
+
+.botoes {
+    padding-block: 1rem;
+    background: var(--bg-tarefas);
+    border-radius: 5px;
+    margin-top: 1rem;
+
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+
+    font-size: .875rem;
+}
