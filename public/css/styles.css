@@ -32,7 +32,12 @@ header {
     padding: 3rem 1.75rem 0;
 }
 
-header div {
+header > div{
+    max-width: 33.65rem;
+    margin-inline: auto;
+}
+
+header div div {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -79,6 +84,8 @@ main {
     box-shadow: var(--box-shadow);
     border-radius: 5px;
     margin-top: -1rem;
+    max-width: 33.75rem;
+    margin-inline: auto;
 }
 
 .tarefas .tarefa {
@@ -123,15 +130,27 @@ main {
     color: var(--info-text-color);
 }
 
+.informacoes .botoes {
+    display: none;
+}
+
 .botoes {
     padding-block: 1rem;
     background: var(--bg-tarefas);
     border-radius: 5px;
     margin-top: 1rem;
+    max-width: 33.75rem;
+    margin-inline: auto;
 
     display: flex;
     justify-content: center;
     gap: 1.2rem;
 
     font-size: .875rem;
+}
+
+@media(min-width: 1000px) {
+    section.botoes {
+        display: none;
+    }
 }
