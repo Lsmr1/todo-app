@@ -21,3 +21,14 @@ const conexao = mysql.createConnection({
     port: 8080
 })
 
+conexao.connect((erro) => {
+    if (erro) {
+        return console.log(erro)
+    }
+
+    console.log("Estou conectado ao MYSQL.")
+
+    app.listen(3000, () => {
+        console.log("Servido rodando na porta 3000!")
+    })
+})
